@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "Hash": "0s3iN9igalTxDsas8/K9xpLPoV85sgSEfnYHGspkNaQ=",
+  "Source": "AuthorizationServer",
+  "BasePath": "_content/AuthorizationServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AuthorizationServer/wwwroot",
+      "Source": "AuthorizationServer",
+      "ContentRoot": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/",
+      "BasePath": "_content/AuthorizationServer",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/css/site.css",
+      "SourceId": "AuthorizationServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/",
+      "BasePath": "_content/AuthorizationServer",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/site.css"
+    },
+    {
+      "Identity": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/favicon.ico",
+      "SourceId": "AuthorizationServer",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/",
+      "BasePath": "_content/AuthorizationServer",
+      "RelativePath": "favicon.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/favicon.ico"
+    }
+  ]
+}
