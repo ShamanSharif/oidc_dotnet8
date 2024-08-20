@@ -29,6 +29,7 @@ public class TestData(IServiceProvider serviceProvider) : IHostedService
                     
                     OpenIddictConstants.Permissions.GrantTypes.AuthorizationCode,
                     OpenIddictConstants.Permissions.GrantTypes.ClientCredentials,
+                    OpenIddictConstants.Permissions.GrantTypes.RefreshToken,
 
                     OpenIddictConstants.Permissions.Prefixes.Scope + "api",
                     

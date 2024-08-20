@@ -56,8 +56,7 @@ builder.Services.AddOpenIddict()
             .UseAspNetCore()
             .EnableTokenEndpointPassthrough()
             .EnableAuthorizationEndpointPassthrough()
-            .EnableUserinfoEndpointPassthrough()
-            .EnableLogoutEndpointPassthrough();
+            .EnableUserinfoEndpointPassthrough();
     });
 
 builder.Services.AddHostedService<TestData>();

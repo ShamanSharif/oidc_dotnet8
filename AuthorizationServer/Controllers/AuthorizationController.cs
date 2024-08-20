@@ -42,6 +42,12 @@ public class AuthorizationController : Controller
             // Retrieve the claims principal stored in the authorization code
             claimsPrincipal = (await HttpContext.AuthenticateAsync(OpenIddictServerAspNetCoreDefaults.AuthenticationScheme)).Principal;
         }
+        
+        else if (request.IsRefreshTokenGrantType())
+        {
+            // Retrieve the claims principal stored in the refresh token.
+            claimsPrincipal = (await HttpContext.AuthenticateAsync(OpenIddictServerAspNetCoreDefaults.AuthenticationScheme)).Principal;
+        }
 
         else
         {
