@@ -9,31 +9,31 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AuthorizationServer
 build_property.RootNamespace = AuthorizationServer
-build_property.ProjectDir = /Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/
+build_property.ProjectDir = C:\Dev\Demo\OIdC\oidc_dotnet8\AuthorizationServer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer
+build_property.MSBuildProjectDirectory = C:\Dev\Demo\OIdC\oidc_dotnet8\AuthorizationServer
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/Views/Account/Login.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+[C:/Dev/Demo/OIdC/oidc_dotnet8/AuthorizationServer/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[C:/Dev/Demo/OIdC/oidc_dotnet8/AuthorizationServer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+[C:/Dev/Demo/OIdC/oidc_dotnet8/AuthorizationServer/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[C:/Dev/Demo/OIdC/oidc_dotnet8/AuthorizationServer/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+[C:/Dev/Demo/OIdC/oidc_dotnet8/AuthorizationServer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

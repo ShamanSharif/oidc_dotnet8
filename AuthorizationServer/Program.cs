@@ -22,23 +22,25 @@ builder.Services.AddDbContext<DbContext>(options =>
 });
 
 builder.Services.AddOpenIddict()
-
-    // Register the OpenIddict core components.
+    // Register the OpenIdDict core components.
     .AddCore(options =>
     {
-        // Configure OpenIddict to use the EF Core stores/models.
+        // Configure OpenIdDict to use the EF Core stores/models.
         options.UseEntityFrameworkCore()
             .UseDbContext<DbContext>();
     })
-
-    // Register the OpenIddict server components.
+    // Register the OpenIdDict server components.
     .AddServer(options =>
     {
         options
-            .AllowClientCredentialsFlow();
+            .AllowClientCredentialsFlow()
+            .AllowAuthorizationCodeFlow()
+            .RequireProofKeyForCodeExchange();
 
         options
-            .SetTokenEndpointUris("/connect/token");
+            .SetAuthorizationEndpointUris("connect/authorize")
+            .SetTokenEndpointUris("/connect/token")
+            .SetUserinfoEndpointUris("/connect/userinfo");
 
         // Encryption and signing of tokens
         options
@@ -52,7 +54,10 @@ builder.Services.AddOpenIddict()
         // Register the ASP.NET Core host and configure the ASP.NET Core-specific options.
         options
             .UseAspNetCore()
-            .EnableTokenEndpointPassthrough();            
+            .EnableTokenEndpointPassthrough()
+            .EnableAuthorizationEndpointPassthrough()
+            .EnableUserinfoEndpointPassthrough()
+            .EnableLogoutEndpointPassthrough();
     });
 
 builder.Services.AddHostedService<TestData>();
@@ -63,7 +68,8 @@ var app = builder.Build();
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+    // The default HSTS value is 30 days.
+    // You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
 
@@ -73,7 +79,7 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthentication();
-// app.UseAuthorization();
+app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",

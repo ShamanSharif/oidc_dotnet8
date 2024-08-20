@@ -1,27 +1,27 @@
 {
   "Files": [
     {
-      "Id": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
+      "Id": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/wwwroot/favicon.ico",
-      "PackagePath": "staticwebassets/favicon.ico"
+      "Id": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.AuthorizationServer.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthorizationServer.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.AuthorizationServer.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.AuthorizationServer.props",
       "PackagePath": "build\\AuthorizationServer.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.AuthorizationServer.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.AuthorizationServer.props",
       "PackagePath": "buildMultiTargeting\\AuthorizationServer.props"
     },
     {
-      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.AuthorizationServer.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.AuthorizationServer.props",
       "PackagePath": "buildTransitive\\AuthorizationServer.props"
     }
   ],

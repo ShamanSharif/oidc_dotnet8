@@ -3105,25 +3105,32 @@
     ]
   },
   "packageFolders": {
-    "/Users/asif/.nuget/packages/": {}
+    "C:\\Users\\Shaman Sharif\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/AuthorizationServer.csproj",
+      "projectUniqueName": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\AuthorizationServer.csproj",
       "projectName": "AuthorizationServer",
-      "projectPath": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/AuthorizationServer.csproj",
-      "packagesPath": "/Users/asif/.nuget/packages/",
-      "outputPath": "/Users/asif/dev/inNeed.Cloud/Zimmet/OIDC/AuthorizationServer/AuthorizationServer/obj/",
+      "projectPath": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\AuthorizationServer.csproj",
+      "packagesPath": "C:\\Users\\Shaman Sharif\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/asif/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Shaman Sharif\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3136,6 +3143,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3178,7 +3190,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
