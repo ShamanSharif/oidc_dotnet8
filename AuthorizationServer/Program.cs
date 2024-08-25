@@ -40,7 +40,8 @@ builder.Services.AddOpenIddict()
         options
             .SetAuthorizationEndpointUris("connect/authorize")
             .SetTokenEndpointUris("/connect/token")
-            .SetUserinfoEndpointUris("/connect/userinfo");
+            .SetUserinfoEndpointUris("/connect/userinfo")
+            .SetLogoutEndpointUris("connect/logout");
 
         // Encryption and signing of tokens
         options
@@ -56,7 +57,8 @@ builder.Services.AddOpenIddict()
             .UseAspNetCore()
             .EnableTokenEndpointPassthrough()
             .EnableAuthorizationEndpointPassthrough()
-            .EnableUserinfoEndpointPassthrough();
+            .EnableUserinfoEndpointPassthrough()
+            .EnableLogoutEndpointPassthrough();
     });
 
 builder.Services.AddHostedService<TestData>();

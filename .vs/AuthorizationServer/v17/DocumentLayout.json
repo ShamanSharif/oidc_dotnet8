@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|c:\\dev\\demo\\oidc\\oidc_dotnet8\\authorizationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|solutionrelative:authorizationserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|c:\\dev\\demo\\oidc\\oidc_dotnet8\\authorizationserver\\settings\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|solutionrelative:authorizationserver\\settings\\testdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|c:\\dev\\demo\\oidc\\oidc_dotnet8\\authorizationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01B5FF11-1E30-4E8E-A9E2-5A62FF044692}|AuthorizationServer\\AuthorizationServer.csproj|solutionrelative:authorizationserver\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthorizationServer\\appsettings.json",
+              "ToolTip": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\appsettings.json",
+              "RelativeToolTip": "AuthorizationServer\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-20T18:55:55.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TestData.cs",
+              "DocumentMoniker": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\Settings\\TestData.cs",
+              "RelativeDocumentMoniker": "AuthorizationServer\\Settings\\TestData.cs",
+              "ToolTip": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\Settings\\TestData.cs",
+              "RelativeToolTip": "AuthorizationServer\\Settings\\TestData.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAQwCEAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:40:08.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\Program.cs",
+              "RelativeDocumentMoniker": "AuthorizationServer\\Program.cs",
+              "ToolTip": "C:\\Dev\\Demo\\OIdC\\oidc_dotnet8\\AuthorizationServer\\Program.cs",
+              "RelativeToolTip": "AuthorizationServer\\Program.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-20T18:28:29.142Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

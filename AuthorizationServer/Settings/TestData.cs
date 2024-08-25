@@ -37,6 +37,31 @@ public class TestData(IServiceProvider serviceProvider) : IHostedService
                 }
             }, cancellationToken);
         }
+        
+        if (await manager.FindByClientIdAsync("client-one", cancellationToken) is null)
+        {
+            await manager.CreateAsync(new OpenIddictApplicationDescriptor
+            {
+                ClientId = "client-one",
+                ClientSecret = "client-one-secret",
+                DisplayName = "Client One",
+                RedirectUris = { new Uri("https://localhost:7063/signin-oidc") },
+                PostLogoutRedirectUris = { new Uri("https://localhost:7063/signout-callback-oidc") },
+                Permissions =
+                {
+                    OpenIddictConstants.Permissions.Endpoints.Authorization,
+                    OpenIddictConstants.Permissions.Endpoints.Token,
+                    
+                    OpenIddictConstants.Permissions.GrantTypes.AuthorizationCode,
+                    OpenIddictConstants.Permissions.GrantTypes.ClientCredentials,
+                    OpenIddictConstants.Permissions.GrantTypes.RefreshToken,
+
+                    OpenIddictConstants.Permissions.Prefixes.Scope + "api",
+                    
+                    OpenIddictConstants.Permissions.ResponseTypes.Code,
+                }
+            }, cancellationToken);
+        }
     }
 
     public Task StopAsync(CancellationToken cancellationToken) => Task.CompletedTask;
