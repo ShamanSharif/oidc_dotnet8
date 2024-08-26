@@ -1,3 +1,4 @@
+using System.Net;
 using AuthorizationServer.Settings;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.EntityFrameworkCore;
@@ -35,14 +36,15 @@ builder.Services.AddOpenIddict()
         options
             .AllowClientCredentialsFlow()
             .AllowAuthorizationCodeFlow()
+            .AllowRefreshTokenFlow()
             .RequireProofKeyForCodeExchange();
 
         options
             .SetAuthorizationEndpointUris("connect/authorize")
             .SetTokenEndpointUris("/connect/token")
             .SetUserinfoEndpointUris("/connect/userinfo")
-            .SetLogoutEndpointUris("connect/logout");
-
+            .SetLogoutEndpointUris("connect/logout")
+            .SetRevocationEndpointUris("/connect/revocation");
         // Encryption and signing of tokens
         options
             .AddEphemeralEncryptionKey()
@@ -82,6 +84,8 @@ app.UseRouting();
 app.UseAuthentication();
 app.UseAuthorization();
 
+Console.WriteLine(ServicePointManager.SecurityProtocol.ToString());
+Console.WriteLine("============ Hello World ==============");
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

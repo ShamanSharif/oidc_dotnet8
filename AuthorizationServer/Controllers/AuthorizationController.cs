@@ -115,4 +115,78 @@ public class AuthorizationController : Controller
             Age = 30
         });
     }
+    
+    [Authorize(AuthenticationSchemes = OpenIddictServerAspNetCoreDefaults.AuthenticationScheme)]
+    [HttpPost("~/connect/logout")]
+    [HttpGet("~/connect/logout")]
+    public async Task<IActionResult> Logout()
+    {
+        var request = HttpContext.GetOpenIddictServerRequest() ??
+                      throw new InvalidOperationException("The OpenID Connect request cannot be retrieved.");
+
+        // If the user is authenticated, sign them out.
+        if (User.Identity.IsAuthenticated)
+        {
+            // Sign out the user from the cookie authentication scheme.
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+
+            // Optionally: also sign out the user from the OpenIddict server scheme.
+            await HttpContext.SignOutAsync(OpenIddictServerAspNetCoreDefaults.AuthenticationScheme);
+        }
+
+        // Retrieve the post_logout_redirect_uri parameter and validate it.
+        var postLogoutRedirectUri = request.PostLogoutRedirectUri;
+        if (!string.IsNullOrEmpty(postLogoutRedirectUri))
+        {
+            // Ensure the redirect URI is allowed by your application.
+            // This step is essential to prevent open redirection attacks.
+            // if (!IsValidPostLogoutRedirectUri(postLogoutRedirectUri))
+            // {
+            //     throw new InvalidOperationException("The specified 'post_logout_redirect_uri' is invalid.");
+            // }
+
+            // Redirect the user to the post_logout_redirect_uri.
+            return Redirect(postLogoutRedirectUri);
+        }
+
+        // If no post_logout_redirect_uri is specified, you can redirect to a default page.
+        return Redirect("~/");
+    }
+    
+    
+    [HttpPost("~/connect/revocation"), Produces("application/json")]
+    public async Task<IActionResult> Revoke()
+    {
+        var request = HttpContext.GetOpenIddictServerRequest() ??
+                      throw new InvalidOperationException("The OpenID Connect request cannot be retrieved.");
+
+        // Extract the token to revoke.
+        var token = request.Token;
+        if (string.IsNullOrEmpty(token))
+        {
+            return BadRequest(new
+            {
+                Error = OpenIddictConstants.Errors.InvalidRequest,
+                ErrorDescription = "The token is missing."
+            });
+        }
+
+        // Retrieve the token from the database.
+        var tokenManager = HttpContext.RequestServices.GetRequiredService<IOpenIddictTokenManager>();
+        var tokenDescriptor = await tokenManager.FindByReferenceIdAsync(token);
+
+        if (tokenDescriptor == null)
+        {
+            return BadRequest(new
+            {
+                Error = OpenIddictConstants.Errors.InvalidRequest,
+                ErrorDescription = "The token is invalid."
+            });
+        }
+
+        // Mark the token as revoked by changing its status.
+        await tokenManager.TryRevokeAsync(tokenDescriptor);
+
+        return Ok(new { Success = true });
+    }
 }
